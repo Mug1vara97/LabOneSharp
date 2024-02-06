@@ -100,8 +100,8 @@ public class Program
         department.EmployeeCount = 5;
 
         StaffEmployee staffEmployee = new StaffEmployee();
-        staffEmployee.FullName = "Иванов Иван Иванович";
-        staffEmployee.Position = "Программист";
+        staffEmployee.FullName = "Test1";
+        staffEmployee.Position = "Test1";
         staffEmployee.Salary = 1000; // некорректного значения только при -
         staffEmployee.Bonus = -1000; // некорректного значения только при -
 
@@ -110,8 +110,8 @@ public class Program
         Console.WriteLine("Зарплата штатного сотрудника: " + staffSalary);
 
         ContractEmployee contractEmployee = new ContractEmployee();
-        contractEmployee.FullName = "Петров Петр Петрович";
-        contractEmployee.Position = "Тестировщик";
+        contractEmployee.FullName = "Test2";
+        contractEmployee.Position = "Test2";
         contractEmployee.Salary = -10000; // некорректного значения только при -
 
         decimal contractSalary = contractEmployee.CalculateSalary();
